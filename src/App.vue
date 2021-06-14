@@ -23,11 +23,6 @@
       />
 
       <button v-on:click="showMore">더보기</button>
-      <!-- <p>{{ $store.state.name }}</p>
-      <p>{{ $store.state.age }}</p>
-      <button v-on:click=" $store.state.이름 = 'park' ">버튼</button>
-      <button v-on:click="$store.commit('changeName', '김씨')">버튼</button>
-      <button v-on:click="$store.commit('agePlus')">나이+</button> -->
 
       <div class="footer">
          <ul class="footer-button-plus">
