@@ -13,7 +13,7 @@
             <strong>{{ Postings.name }}</strong>
             {{ Postings.caption }}
          </p>
-         <p class="date">May 15</p>
+         <p class="date">May 14</p>
       </div>
    </div>
 </template>
