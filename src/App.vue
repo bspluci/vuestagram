@@ -4,14 +4,14 @@
          <ul v-if="step > 0" class="header-button-left">
             <li v-on:click="step--">Cancel</li>
          </ul>
+         <img src="./assets/logo.png" class="logo" />
+
          <ul v-if="step == 1" class="header-button-right">
             <li v-on:click="step++">Next</li>
          </ul>
          <ul v-if="step == 2" class="header-button-right">
             <li v-on:click="publish">Publish</li>
          </ul>
-
-         <img src="./assets/logo.png" class="logo" />
       </div>
 
       <Body
@@ -23,11 +23,11 @@
       />
 
       <button v-on:click="showMore">더보기</button>
-      <p>{{ $store.state.name }}</p>
+      <!-- <p>{{ $store.state.name }}</p>
       <p>{{ $store.state.age }}</p>
-      <!-- <button v-on:click=" $store.state.이름 = 'park' ">버튼</button> -->
+      <button v-on:click=" $store.state.이름 = 'park' ">버튼</button>
       <button v-on:click="$store.commit('changeName', '김씨')">버튼</button>
-      <button v-on:click="$store.commit('agePlus')">나이+</button>
+      <button v-on:click="$store.commit('agePlus')">나이+</button> -->
 
       <div class="footer">
          <ul class="footer-button-plus">
@@ -35,7 +35,6 @@
             <label for="file" class="input-plus">+</label>
          </ul>
       </div>
-      <p>{{ trans }}</p>
    </div>
 </template>
 
@@ -130,37 +129,24 @@ ul {
    padding: 5px;
    list-style-type: none;
 }
-.logo {
-   width: 22px;
-   margin: auto;
-   display: block;
-   position: absolute;
-   left: 0;
-   right: 0;
-   top: 13px;
-}
 .header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    width: 100%;
    height: 40px;
    background-color: white;
-   padding-bottom: 8px;
-   position: sticky;
-   top: 0;
 }
-.header-button-left {
-   color: skyblue;
-   float: left;
-   width: 50px;
-   padding-left: 20px;
-   cursor: pointer;
-   margin-top: 10px;
+.logo {
+   display: block;
+   width: 25px;
+   margin: 0 auto;
 }
+.header-button-left,
 .header-button-right {
+   width: 70px;
    color: skyblue;
-   float: right;
-   width: 50px;
    cursor: pointer;
-   margin-top: 10px;
 }
 .footer {
    width: 100%;
@@ -186,6 +172,7 @@ ul {
    display: none;
 }
 .input-plus {
+   padding: 10px;
    cursor: pointer;
 }
 #app {

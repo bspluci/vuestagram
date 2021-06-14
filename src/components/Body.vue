@@ -11,7 +11,6 @@
                <p class="filterTitle">{{ filterName[i] }}</p>
             </FilterBox>
          </div>
-         <button v-on:click="translate" value="넘어가쪄">aaaaaaaaaaaaaaaaaa</button>
       </div>
 
       <div v-if="step == 2">
