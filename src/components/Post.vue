@@ -8,7 +8,7 @@
       <div :class="`post-body ${Postings.filter}`" :style="`background-image:url(${Postings.postImage})`"></div>
 
       <div class="post-content">
-         <button v-on:click="likeCounter">{{ Postings.likes }} Likes</button>
+         <button v-on:click="likeCounter" class="btn_like">{{ Postings.likes }} Likes</button>
          <p>
             <strong>{{ Postings.name }}</strong>
             {{ Postings.caption }}
@@ -68,13 +68,20 @@ export default {
    background-size: cover;
 }
 .post-content {
-   padding-left: 15px;
-   padding-right: 15px;
+   padding: 15px;
    font-size: 14px;
 }
 .date {
    font-size: 11px;
    color: grey;
    margin-top: -8px;
+}
+.btn_like {
+   margin-top: 5px;
+   border-radius: none;
+   background: #6293e3;
+   padding: 5px 10px;
+   color: #fff;
+   border: 1px solid #ddd;
 }
 </style>

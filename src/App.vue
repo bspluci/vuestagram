@@ -150,6 +150,8 @@ ul {
    bottom: 0;
    padding-bottom: 10px;
    background-color: white;
+   border-top: 1px solid #ddd;
+   box-shadow: 0px -8px 15px -7px rgb(0 0 0 / 10%);
 }
 .footer-button-plus {
    width: 80px;
