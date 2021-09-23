@@ -22,9 +22,9 @@
          :imgsrc="imgsrc"
       />
 
-      <button v-on:click="showMore">더보기</button>
+      <button v-if="step == 0" v-on:click="showMore">더보기</button>
 
-      <div class="footer">
+      <div class="footer" v-if="step == 0">
          <ul class="footer-button-plus">
             <input v-on:change="upload" type="file" id="file" class="inputfile" />
             <label for="file" class="input-plus">+</label>
@@ -129,8 +129,9 @@ ul {
    align-items: center;
    justify-content: space-between;
    width: 100%;
-   height: 40px;
+   height: 50px;
    background-color: white;
+   border-bottom: 1px solid #ddd;
 }
 .logo {
    display: block;

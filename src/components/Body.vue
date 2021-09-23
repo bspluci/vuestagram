@@ -107,13 +107,16 @@ export default {
    background: #555;
 }
 .write-box {
-   border: none;
-   width: 90%;
-   height: 100px;
-   padding: 15px;
-   margin: auto;
    display: block;
+   border: none;
+   width: 100%;
+   height: 200px;
+   padding: 15px;
+   box-sizing: border-box;
+   margin: auto;
    outline: none;
+   margin: 0;
+   background: #f1f1f1;
 }
 .filterTitle {
    background: rgba(0, 0, 0, 0.5);

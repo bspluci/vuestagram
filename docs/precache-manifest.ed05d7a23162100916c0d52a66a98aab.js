@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aaa107bcb50421957700",
-    "url": "/vuestagram/css/app.83b143a8.css"
+    "revision": "c662d6c70f36f05aa4a9",
+    "url": "/vuestagram/css/app.08c98036.css"
   },
   {
     "revision": "82b9c7a5a3f405032b1db71a25f67021",
     "url": "/vuestagram/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "f4cb026c6d0651ec7c0db4b0fefb577c",
+    "revision": "80fa3aff0eee8a9a22d52872cb0fcc47",
     "url": "/vuestagram/index.html"
   },
   {
-    "revision": "aaa107bcb50421957700",
-    "url": "/vuestagram/js/app.7cd8c6aa.js"
+    "revision": "c662d6c70f36f05aa4a9",
+    "url": "/vuestagram/js/app.5beca830.js"
   },
   {
     "revision": "7a4760b8b42d11b796e9",
